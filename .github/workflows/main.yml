@@ -14,10 +14,11 @@
 # Controls when the action will run. Triggers the workflow on push or pull request events but only for the master branch
 name: Checkmarx SAST Scan
 on:
-  push:
+  pull_request:
+    types: [opened, reopened, synchronize] #Types specify which pull request events will trigger the workflow. For more events refer Github Actions documentation.
     branches:
-      - main
-      - master
+    - master
+    - main
     
 jobs:
   build:
