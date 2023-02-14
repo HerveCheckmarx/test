@@ -28,41 +28,7 @@ public class Main {
 		
 		foo(); 
 	}
-	public static long calc(int a, long b, int c)
-	{
-		long result = a + b + c;
-		return result;
-	}
 	
-	public static long doubleCalc(int a)
-	{
-		long result = a *2;
-		return result;
-	}
-	public void yes_im_died_function()
-	{
-		boolean captcha = true;
-		
-		if(captcha)
-		{
-			Scanner in = new Scanner(System.in);		
-			String inputStr = in.next();
-			System.out.println(inputStr);
-		}
-		else
-		{
-			Scanner in = new Scanner(System.in);		
-			String inputStr = in.next();
-			System.out.println(inputStr);
-		}
-	}
-	
-	public void iMSimpleRec()
-	{
-		System.out.println("Do nothing");
-		iMSimpleRec();
-		
-	}
 }
 
 
